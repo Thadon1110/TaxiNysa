@@ -1,0 +1,42 @@
+@use 'colors' as *;
+
+.custom-shape-divider-bottom-1690031514 {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	overflow: hidden;
+	line-height: 0;
+}
+
+.custom-shape-divider-bottom-1690031514 svg {
+	position: relative;
+	display: block;
+	width: calc(100% + 1.3px);
+	height: 39px;
+}
+
+.custom-shape-divider-bottom-1690031514 .shape-fill {
+	fill: $primary;
+}
+
+.custom-shape-divider-top-1690032619 {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	overflow: hidden;
+	line-height: 0;
+	transform: rotate(180deg);
+}
+
+.custom-shape-divider-top-1690032619 svg {
+	position: relative;
+	display: block;
+	width: calc(100% + 1.3px);
+	height: 39px;
+}
+
+.custom-shape-divider-top-1690032619 .shape-fill {
+	fill: $primary;
+}

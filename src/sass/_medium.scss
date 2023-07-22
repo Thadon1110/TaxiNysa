@@ -1,0 +1,20 @@
+@use 'colors' as *;
+
+@media (min-width: 772px) {
+	.nav {
+		&__header {
+			.nav__logo {
+				width: 100%;
+			}
+
+			.nav__menu-burger {
+				display: none;
+				background-color: #fff;
+			}
+		}
+
+		&__menu {
+			display: flex;
+		}
+	}
+}
