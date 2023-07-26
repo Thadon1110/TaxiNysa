@@ -5,6 +5,7 @@
 body {
 	font-family: 'Open Sans', sans-serif;
 	background-color: $secondary;
+	color: $light;
 }
 
 .wrapper {
@@ -19,6 +20,7 @@ body {
 		text-align: center;
 		padding: 4rem;
 		font-size: 3rem;
+		cursor: default;
 	}
 }
 
@@ -157,14 +159,21 @@ body {
 	}
 }
 
-.offers {
-	.wrapper {
-		background-image: url('../img/offers.png');
-		background-size: cover;
+.road {
+	position: relative;
+
+	&__wrapper {
+		margin: 0 auto;
+		max-width: 1200px;
+		width: 100%;
+		background-image: url('../img/roadXS.png');
+		background-size: contain;
 		background-repeat: no-repeat;
 		background-position: center;
 	}
+}
 
+.offers {
 	&__cards {
 		display: flex;
 		justify-content: center;
@@ -180,9 +189,10 @@ body {
 		width: 30rem;
 		margin: 3rem 4rem;
 		padding: 2rem;
-		background-color: rgb(191, 175, 31, 0.8);
+		background-color: rgb(191, 31, 31, 0.8);
 		border-radius: 8px;
 		font-size: 1.8rem;
+		color: $dark;
 		transition: box-shadow 0.3s;
 
 		i {
@@ -209,13 +219,6 @@ body {
 
 .tariffs {
 	position: relative;
-
-	.wrapper {
-		background-image: url('../img/offers.png');
-		background-size: cover;
-		background-repeat: no-repeat;
-		background-position: center;
-	}
 
 	&__container {
 		display: flex;
@@ -267,7 +270,7 @@ body {
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
-	color: $light;
+	color: $dark;
 
 	&__text {
 		width: 100%;
@@ -312,20 +315,23 @@ body {
 		width: 100%;
 
 		&-element {
+			display: flex;
+			flex-direction: column;
 			width: 100%;
 			padding: 1rem;
 			text-align: center;
 		}
 
 		p {
-			font-size: 2.2rem;
+			font-size: 3rem;
 			text-transform: uppercase;
 			font-weight: bold;
 		}
 
 		a {
-			font-size: 1.8em;
-			color: $dark;
+			display: inline-block;
+			font-size: 2.4em;
+			color: $light;
 		}
 	}
 }
@@ -337,6 +343,7 @@ body {
 		padding: 1rem 2rem 2rem;
 		font-size: 1.5rem;
 		text-align: center;
+		color: $dark;
 	}
 }
 

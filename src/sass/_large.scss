@@ -1,4 +1,9 @@
 @use 'colors' as *;
 
 @media (min-width: 992px) {
+	.road {
+		&__wrapper {
+			background-image: url('../img/roadL.png');
+		}
+	}
 }
