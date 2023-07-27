@@ -1,8 +1,14 @@
 @use 'colors' as *;
 
 @media (min-width: 772px) {
+	.section {
+		scroll-margin-top: 83px;
+	}
+
 	.nav {
 		&__header {
+			margin: 2rem;
+
 			.nav__logo {
 				width: 40%;
 			}
@@ -14,6 +20,25 @@
 
 		&__menu {
 			display: flex;
+
+			.active::after,
+			.active::before {
+				transform: scaleX(0.5);
+			}
+
+			.active::after {
+				transform-origin: left;
+			}
+
+			.active::before {
+				transform-origin: right;
+			}
+		}
+	}
+
+	.nav__scroll {
+		.nav__header {
+			margin: 1rem;
 		}
 	}
 
@@ -39,34 +64,34 @@
 		}
 	}
 
-	.contact {
-		&__container {
-			flex-direction: row;
-		}
+	// .contact {
+	// 	&__container {
+	// 		flex-direction: row;
+	// 	}
 
-		&__img {
-			width: 50%;
-		}
+	// 	&__img {
+	// 		width: 50%;
+	// 	}
 
-		&__informations {
-			width: 30%;
+	// 	&__informations {
+	// 		width: 30%;
 
-			&-element {
-				display: flex;
-				flex-direction: column;
-				padding: 4rem;
-				text-align: left;
-			}
+	// 		&-element {
+	// 			display: flex;
+	// 			flex-direction: column;
+	// 			padding: 4rem;
+	// 			text-align: left;
+	// 		}
 
-			p {
-				font-size: 3rem;
-				text-transform: uppercase;
-				font-weight: bold;
-			}
+	// 		p {
+	// 			font-size: 3rem;
+	// 			text-transform: uppercase;
+	// 			font-weight: bold;
+	// 		}
 
-			a {
-				font-size: 2.2em;
-			}
-		}
-	}
+	// 		a {
+	// 			font-size: 2.2em;
+	// 		}
+	// 	}
+	// }
 }
