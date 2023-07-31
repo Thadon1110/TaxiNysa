@@ -44,7 +44,8 @@
 
 	.header {
 		&__text {
-			top: 50%;
+			top: 30%;
+			transform: translateY(-100%);
 			padding-bottom: 1rem;
 		}
 
@@ -64,34 +65,21 @@
 		}
 	}
 
-	// .contact {
-	// 	&__container {
-	// 		flex-direction: row;
-	// 	}
+	.tariffs {
+		&__offer {
+			font-size: 2rem;
+		}
+	}
 
-	// 	&__img {
-	// 		width: 50%;
-	// 	}
+	.contact {
+		&__informations {
+			a {
+				font-size: 3em;
+			}
 
-	// 	&__informations {
-	// 		width: 30%;
-
-	// 		&-element {
-	// 			display: flex;
-	// 			flex-direction: column;
-	// 			padding: 4rem;
-	// 			text-align: left;
-	// 		}
-
-	// 		p {
-	// 			font-size: 3rem;
-	// 			text-transform: uppercase;
-	// 			font-weight: bold;
-	// 		}
-
-	// 		a {
-	// 			font-size: 2.2em;
-	// 		}
-	// 	}
-	// }
+			p {
+				font-size: 3.6rem;
+			}
+		}
+	}
 }

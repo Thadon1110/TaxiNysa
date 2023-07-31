@@ -6,4 +6,10 @@
 			background-image: url('../img/roadL.png');
 		}
 	}
+
+	.tariffs {
+		&__offer:hover {
+			scale: 1.1;
+		}
+	}
 }

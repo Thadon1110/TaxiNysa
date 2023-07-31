@@ -103,7 +103,7 @@ body {
 
 		a:hover::after,
 		a:hover::before {
-			transform: scaleX(0.5);
+			transform: scaleX(0.6);
 		}
 
 		a:hover::after {
@@ -147,7 +147,7 @@ body {
 		a {
 			position: relative;
 			font-size: 5rem;
-			padding: 2rem;
+			padding: 1rem;
 			text-transform: uppercase;
 			color: $dark;
 		}
@@ -176,7 +176,7 @@ body {
 
 		a:hover::after,
 		a:hover::before {
-			transform: scaleX(0.5);
+			transform: scaleX(0.6);
 		}
 
 		a:hover::after {
@@ -200,6 +200,7 @@ body {
 }
 
 .header {
+	position: relative;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -216,10 +217,11 @@ body {
 
 	&__text {
 		position: sticky;
-		top: 48%;
+		top: 40%;
 		left: 50%;
 		transform: translateY(-50%);
 		width: 100%;
+		padding: 1rem;
 		padding-bottom: 3rem;
 		text-align: center;
 	}
@@ -279,7 +281,7 @@ body {
 		border-radius: 8px;
 		font-size: 1.8rem;
 		color: $light;
-		transition: box-shadow 0.3s, scale 0.3s;
+		transition: box-shadow 0.3s, scale 0.3s, background-color 0.3s;
 
 		i {
 			padding: 1.4rem;
@@ -298,6 +300,7 @@ body {
 		}
 
 		&:hover {
+			background-color: rgb(191, 31, 31);
 			box-shadow: 0 0 10px $primary;
 			scale: 1.1;
 		}
@@ -348,7 +351,7 @@ body {
 	}
 
 	&__offer:hover {
-		scale: 1.1;
+		scale: 1.05;
 	}
 }
 
@@ -359,12 +362,18 @@ body {
 	background-position: center;
 	color: $light;
 
+	.section {
+		&__heading {
+			padding: 2rem;
+		}
+	}
+
 	&__text {
 		width: 100%;
 		padding: 2rem;
 		font-size: 2rem;
 		text-align: center;
-		font-weight: 600;
+		font-weight: 400;
 	}
 }
 
@@ -415,7 +424,7 @@ body {
 
 		a {
 			display: inline-block;
-			font-size: 2.4em;
+			font-size: 2.6em;
 			color: $light;
 			transition: color 0.3s;
 		}
@@ -425,7 +434,7 @@ body {
 		}
 
 		p {
-			font-size: 3rem;
+			font-size: 3.4rem;
 			text-transform: uppercase;
 			font-weight: bold;
 			cursor: default;
