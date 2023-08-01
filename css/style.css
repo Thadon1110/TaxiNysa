@@ -177,7 +177,7 @@ body {
 }
 .nav__menu a:hover::after,
 .nav__menu a:hover::before {
-  transform: scaleX(0.5);
+  transform: scaleX(0.6);
 }
 .nav__menu a:hover::after {
   transform-origin: left;
@@ -215,7 +215,7 @@ body {
 .nav__mobile a {
   position: relative;
   font-size: 5rem;
-  padding: 2rem;
+  padding: 1rem;
   text-transform: uppercase;
   color: #000;
 }
@@ -240,7 +240,7 @@ body {
 }
 .nav__mobile a:hover::after,
 .nav__mobile a:hover::before {
-  transform: scaleX(0.5);
+  transform: scaleX(0.6);
 }
 .nav__mobile a:hover::after {
   transform-origin: left;
@@ -259,6 +259,7 @@ body {
 }
 
 .header {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -275,10 +276,11 @@ body {
 }
 .header__text {
   position: sticky;
-  top: 48%;
+  top: 40%;
   left: 50%;
   transform: translateY(-50%);
   width: 100%;
+  padding: 1rem;
   padding-bottom: 3rem;
   text-align: center;
 }
@@ -389,7 +391,7 @@ body {
   text-align: right;
 }
 .tariffs__offer:hover {
-  scale: 1.1;
+  scale: 1.05;
 }
 
 .promotion {
@@ -398,6 +400,9 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   color: #ffffff;
+}
+.promotion .section__heading {
+  padding: 2rem;
 }
 .promotion__text {
   width: 100%;
@@ -511,6 +516,7 @@ body {
   }
   .header__text {
     top: 30%;
+    transform: translateY(-100%);
     padding-bottom: 1rem;
   }
   .header h1 {
@@ -536,5 +542,8 @@ body {
 @media (min-width: 992px) {
   .road__wrapper {
     background-image: url("../img/roadL.png");
+  }
+  .tariffs__offer:hover {
+    scale: 1.1;
   }
 }/*# sourceMappingURL=style.css.map */
