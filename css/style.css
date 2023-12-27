@@ -104,7 +104,8 @@ body {
 .section__heading {
   text-transform: uppercase;
   text-align: center;
-  padding: 4rem;
+  padding-top: 4rem;
+  padding-bottom: 2rem;
   font-size: 3rem;
   cursor: default;
 }
@@ -266,7 +267,7 @@ body {
   flex-direction: column;
   width: 100%;
   height: 100%;
-  background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/header.jpg");
+  background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/headerSmall.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -342,6 +343,7 @@ body {
 .offers__card-title {
   padding: 1rem;
   font-size: 2.2rem;
+  text-transform: uppercase;
   text-align: center;
 }
 .offers__card-desc {
@@ -414,7 +416,7 @@ body {
 
 .contact {
   position: relative;
-  background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/contact.jpg");
+  background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/contactSmall.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -514,6 +516,9 @@ body {
   .nav__scroll .nav__header {
     margin: 1rem;
   }
+  .header {
+    background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/headerBig.jpg");
+  }
   .header__text {
     top: 30%;
     transform: translateY(-100%);
@@ -531,6 +536,9 @@ body {
   }
   .tariffs__offer {
     font-size: 2rem;
+  }
+  .contact {
+    background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/contactBig.jpg");
   }
   .contact__informations a {
     font-size: 3em;
